@@ -1,0 +1,19 @@
+/* LanguageSwitcher.css */
+.language-switcher {
+  width: 400px;
+  top: 20px;
+}
+
+.language-switcher select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.language-switcher select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}

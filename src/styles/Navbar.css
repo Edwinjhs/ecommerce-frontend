@@ -1,0 +1,116 @@
+nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px; /* Añade padding para evitar que toquen bordes */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; /* Altura fija para contener el logo */
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Espacio entre elementos */
+  flex-wrap: nowrap; /* Evita el wrap */
+}
+
+.nav-links a {
+  color: #545c68;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap; /* Evita salto de línea */
+  padding: 5px 10px;
+}
+.nav-links .whatsapp-btn {
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #461111;
+
+}
+.nav-container > .language-switcher {
+  margin-left: auto; /* Lo empuja a la derecha */
+  margin-right: 20px;
+}
+
+.mobile-menu-btn {
+  color: #461111;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.mobile-menu-bt:hover{
+  background-color: #4b5563;
+}
+.btn1 {
+  background-color: #461111;
+  color: white;
+  text-decoration: none;
+}
+.btn1:hover {
+  background-color: #a43030;
+  color: white;
+  text-decoration: none;
+}
+.btn1 a{
+  color: white;
+  text-decoration: none;
+}
+.nav-links .language-switcher {
+  margin-left: 20px; /* Espacio entre el botón y el selector */
+}
+
+.language-switcher select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    gap: 15px;
+    background: white;
+    padding: 1rem;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+  .nav-links .language-switcher {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

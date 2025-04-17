@@ -1,0 +1,15 @@
+{
+	"welcome": "Welcome",
+	"buttonText": "Click here",
+	"title": "My App",
+
+  "products": "Products",
+  "aboutUs": "About Us",
+  "tracking": "Tracking",
+  "contactUs": "Contact Us",
+
+  "heroTitle": "Aesthetics & Regenerative Experts - Professional Aesthetic Solutions",
+  "heroDescription": "State-of-the-art products for aesthetic and regenerative treatments",
+  "heroButton1": "View Catalog",
+  "heroButton2": "Track Order"
+}

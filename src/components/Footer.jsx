@@ -1,0 +1,35 @@
+import "../styles/Footer.css";
+
+const Footer = () => {
+	return (
+		<footer>
+			<div className="container">
+				<div className="footer-content">
+					<div className="footer-section">
+						<h4>Contacto</h4>
+						<p>e.sanchez@edtmedical.com</p>
+						<p>+57 3236657380</p>
+					</div>
+					<div className="footer-section">
+						<h4>Enlaces Rápidos</h4>
+						<a href="#features">Beneficios</a>
+						<a href="#pricing">Precios</a>
+					</div>
+					<div className="footer-section">
+						<h4>Politicas</h4>
+						<a href="#features">Politica de privacidad</a>
+						<a href="#pricing">Politica de ....</a>
+					</div>
+				</div>
+				<div className="footer-bottom">
+					<p>
+						© 2025 Aesthetics and Regenerative Experts - Todos los derechos
+						reservados
+					</p>
+				</div>
+			</div>
+		</footer>
+	);
+};
+
+export default Footer;

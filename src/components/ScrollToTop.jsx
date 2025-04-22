@@ -4,21 +4,12 @@ import "../styles/ScrollToTop.css";
 const ScrollToTop = () => {
 	const [isVisible, setIsVisible] = useState(false);
 
-	// Mostrar/Ocultar botón
 	const toggleVisibility = () => {
-		if (window.pageYOffset > 300) {
-			setIsVisible(true);
-		} else {
-			setIsVisible(false);
-		}
+		setIsVisible(window.pageYOffset > 300);
 	};
 
-	// Scroll suave al top
 	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
+		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	useEffect(() => {

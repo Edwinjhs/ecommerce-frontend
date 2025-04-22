@@ -3,8 +3,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
 	plugins: [react()],
-	base: "/", // Añade esta línea para rutas absolutas en producción
+	base: "/", // Asegura rutas absolutas
 	build: {
-		outDir: "dist", // Asegura que el build se genere en "dist" (esto ya es el default)
+		outDir: "dist",
+		assetsDir: "assets", // Organiza JS/CSS/imágenes aquí
 	},
 });

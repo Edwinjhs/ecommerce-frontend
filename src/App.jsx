@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { I18nextProvider } from "react-i18next"; // Importa el provider
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { I18nextProvider } from "react-i18next";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // HashRouter aquí
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -11,26 +11,25 @@ import ProductsPage from "./pages/ProductsPage";
 import AboutPage from "./pages/AboutPage";
 import TrackingPage from "./pages/TrackingPage";
 import ScrollToTop from "./components/ScrollToTop";
-import LanguageSwitcher from "./components/LanguageSwitcher"; // Importa el selector de idiomas
-import i18n from "./i18n"; // Importa la configuración de i18n
+import ScrollHandler from "./components/ScrollHandler"; // Componente nuevo
+import i18n from "./i18n";
 import "./App.css";
 
 function App() {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-	return (
+  return (
 		<I18nextProvider i18n={i18n}>
-			{" "}
-			{/* Envuelve todo con el provider */}
-			<Router>
+			<Router basename="/">
+				{" "}
+				{/* HashRouter ahora */}
 				<div className="app">
-
+					<ScrollHandler />
 					<Navbar
 						isMenuOpen={isMenuOpen}
 						toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
 					/>
-
 					<Routes>
 						<Route
 							path="/"
@@ -46,10 +45,9 @@ function App() {
 						<Route path="/quienes-somos" element={<AboutPage />} />
 						<Route path="/seguimiento" element={<TrackingPage />} />
 					</Routes>
-
 					<Footer />
-					<ScrollToTop />
-
+					<ScrollToTop />{" "}
+					{/* Asegúrate de que esté implementado como en el punto 2 */}
 					{selectedProduct && (
 						<ProductModal
 							product={selectedProduct}

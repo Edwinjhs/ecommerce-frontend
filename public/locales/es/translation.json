@@ -11,5 +11,26 @@
 	"heroTitle": "Aesthetics & Regenerative Experts - Soluciones Estéticas Profesionales",
 	"heroDescription": "Productos de última generación para tratamientos estéticos y regenerativos",
 	"heroButton1": "Ver Catálogo",
-	"heroButton2": "Rastrear Pedido"
+	"heroButton2": "Rastrear Pedido",
+
+	"trackingTitle": "Seguimiento de Pedidos",
+  "trackingSubtitle": "En Lipocube nos preocupamos por la transparencia en cada entrega. Aquí puedes monitorear tu pedido en tiempo real.",
+  "whyTrackTitle": "¿Por qué rastrear tu pedido?",
+  "realTimeTracking": "Seguimiento en tiempo real",
+  "realTimeDesc": "Actualizaciones instantáneas de la ubicación de tu paquete",
+  "deliverySpeed": "Entrega rápida",
+  "deliverySpeedDesc": "90% de los pedidos llegan en menos de 48 horas",
+  "secureDelivery": "Entrega segura",
+  "secureDeliveryDesc": "Paquetes asegurados y protegidos en todo momento",
+  "aboutLipocube": "Nuestro Compromiso Lipocube",
+  "ourCommitment": "Excelencia en servicio",
+  "commitmentText": "Más de 10 años brindando soluciones estéticas confiables y profesionales",
+  "productQuality": "Calidad certificada",
+  "qualityText": "Productos probados clínicamente y aprobados por dermatólogos",
+  "howToTrack": "Cómo usar el rastreador:",
+  "step1": "Ingresa tu número de seguimiento",
+  "step2": "Haz clic en 'Buscar'",
+  "step3": "¡Sigue tu paquete en el mapa!",
+  "needHelp": "¿Necesitas ayuda?",
+  "contactSupport": "Nuestro equipo está disponible 24/7 en:"
 }

@@ -6,7 +6,11 @@ import LanguageSwitcher from "./LanguageSwitcher"; // Importa el componente
 
 const Navbar = ({ isMenuOpen, toggleMenu }) => {
 	const { t } = useTranslation();
-
+  const closeMenu = () => {
+		if (isMenuOpen) {
+			toggleMenu(); // Cierra el menú solo si está abierto
+		}
+	};
 	return (
 		<nav>
 			<div className="nav-container">
@@ -34,13 +38,19 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
 
 				<div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
 					{/* Textos traducidos */}
-					<Link to="/productos">{t("products")}</Link>
-					<Link to="/quienes-somos">{t("aboutUs")}</Link>
-					<Link to="/seguimiento">{t("tracking")}</Link>
+					<Link to="/productos" onClick={closeMenu}>
+						{t("products")}
+					</Link>
+					<Link to="/quienes-somos" onClick={closeMenu}>
+						{t("aboutUs")}
+					</Link>
+					<Link to="/seguimiento" onClick={closeMenu}>
+						{t("tracking")}
+					</Link>
 
 					{/* Agrega el LanguageSwitcher aquí */}
 
-					<button className="btn1">
+					<button className="btn1" onClick={closeMenu}>
 						<Link
 							to="https://wa.me/573236657380"
 							className="btn1 whatsapp-btn"

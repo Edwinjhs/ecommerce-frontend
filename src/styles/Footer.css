@@ -23,6 +23,7 @@ footer {
   margin: 0.75rem 0;
 }
 
+
 .footer-section a:hover {
   color: white;
 }
@@ -32,7 +33,14 @@ footer {
   padding-top: 2rem;
   text-align: center;
 }
+.footer-section .login-link {
+  font-weight: 500;
+  color: #ffd700; /* Color dorado para destacar */
+}
 
+.footer-section .login-link:hover {
+  color: #ffeb3b;
+}
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;

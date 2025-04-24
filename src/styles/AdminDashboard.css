@@ -1,0 +1,76 @@
+/* AdminDashboard.css */
+.admin-dashboard {
+  max-width: 800px;
+  margin: 7rem 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+}
+
+.admin-dashboard h1 {
+  color: #461111;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+.admin-dashboard p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard button {
+  background-color: #461111;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard button:hover {
+  background-color: #5a2a2a;
+  transform: translateY(-1px);
+}
+
+.admin-dashboard button:active {
+  transform: translateY(0);
+}
+
+.admin-dashboard section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.admin-dashboard h2 {
+  color: #2d4059;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    margin: 7rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .admin-dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .admin-dashboard h2 {
+    font-size: 1.5rem;
+  }
+}

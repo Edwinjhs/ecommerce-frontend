@@ -47,6 +47,7 @@ function App() {
 							<Route path="/productos" element={<ProductsPage />} />
 							<Route path="/quienes-somos" element={<AboutPage />} />
 							<Route path="/seguimiento" element={<TrackingPage />} />
+							
 
 							{/* Ruta protegida para admin */}
 							<Route

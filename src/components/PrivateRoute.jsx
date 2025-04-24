@@ -1,16 +1,19 @@
-// src/components/PrivateRoute.jsx
 import { useAuth } from "../context/AuthContext";
 import { Navigate, useLocation } from "react-router-dom";
 
-const PrivateRoute = ({ children, role }) => {
-	const { user } = useAuth(); // <-- Usa el hook aquí
+const PrivateRoute = ({ children, requiredRole }) => {
+	const { user, loading } = useAuth();
 	const location = useLocation();
+
+	if (loading) {
+		return <div className="loading-spinner">Cargando...</div>;
+	}
 
 	if (!user) {
 		return <Navigate to="/login" state={{ from: location }} replace />;
 	}
 
-	if (role && user.role !== role) {
+	if (requiredRole && user.role !== requiredRole) {
 		return <Navigate to="/" replace />;
 	}
 

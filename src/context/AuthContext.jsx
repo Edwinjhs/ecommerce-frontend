@@ -1,22 +1,36 @@
+// context/AuthContext.jsx
 import { createContext, useContext, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
-// 1. Crear el contexto
 export const AuthContext = createContext();
 
-// 2. Proveedor del contexto
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState(null);
 	const [loading, setLoading] = useState(true);
-	const navigate = useNavigate();
 
-	// Verificar autenticación al cargar
 	useEffect(() => {
 		const checkAuth = async () => {
+			const token = localStorage.getItem("token");
+
+			if (!token) {
+				setLoading(false);
+				return;
+			}
+
 			try {
-				const storedUser = localStorage.getItem("user");
-				if (storedUser) {
-					setUser(JSON.parse(storedUser));
+				const response = await fetch(
+					"https://inventory-backend-hvte.onrender.com/api/auth/verify",
+					{
+						headers: {
+							Authorization: `Bearer ${token}`,
+						},
+					}
+				);
+
+				if (response.ok) {
+					const userData = await response.json();
+					setUser(userData);
+				} else {
+					localStorage.removeItem("token");
 				}
 			} catch (error) {
 				console.error("Error verificando autenticación:", error);
@@ -26,20 +40,16 @@ export const AuthProvider = ({ children }) => {
 		};
 
 		checkAuth();
-	}, []);
+	}, []); // Array vacío = se ejecuta solo al montar el componente
 
-	// Función de login
 	const login = (userData) => {
-		localStorage.setItem("user", JSON.stringify(userData));
 		setUser(userData);
-		navigate("/admin");
+		localStorage.setItem("token", userData.token);
 	};
 
-	// Función de logout
 	const logout = () => {
-		localStorage.removeItem("user");
 		setUser(null);
-		navigate("/login");
+		localStorage.removeItem("token");
 	};
 
 	return (
@@ -47,13 +57,4 @@ export const AuthProvider = ({ children }) => {
 			{!loading && children}
 		</AuthContext.Provider>
 	);
-};
-
-// 3. Hook personalizado para usar el contexto
-export const useAuth = () => {
-	const context = useContext(AuthContext);
-	if (!context) {
-		throw new Error("useAuth debe usarse dentro de un AuthProvider");
-	}
-	return context;
 };

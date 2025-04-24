@@ -37,9 +37,9 @@
 				// Guardar token y datos de usuario
 				localStorage.setItem("token", data.token);
 				login({
-					email: data.user.email,
-					role: data.user.role,
-					country: data.user.country,
+					email: data.email,
+					role: data.role,
+					country: data.country,
 				});
 
 				navigate("/admin");

@@ -1,0 +1,80 @@
+/* src/styles/CRMPage.css */
+.crm-dashboard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  min-height: 60vh;
+  margin-top: 6rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
+
+.construction-notice {
+  background: #fff5f5;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.tool-icon {
+  font-size: 3rem;
+  color: #461111;
+  margin-bottom: 1.5rem;
+}
+
+.roadmap {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.roadmap-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #461111;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+
+.roadmap h4 {
+  margin: 0 0 0.3rem 0;
+  color: #2d4059;
+}
+
+.roadmap p {
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .roadmap-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    margin-bottom: 0.5rem;
+  }
+}

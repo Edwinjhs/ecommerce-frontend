@@ -1,12 +1,17 @@
 import { useAuth } from "../context/AuthContext";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation, Outlet } from "react-router-dom";
 
-const PrivateRoute = ({ children, requiredRole }) => {
+const PrivateRoute = ({ requiredRole }) => {
 	const { user, loading } = useAuth();
 	const location = useLocation();
 
 	if (loading) {
-		return <div className="loading-spinner">Cargando...</div>;
+		return (
+			<div className="loading-spinner">
+				<div className="spinner"></div>
+				<p>Verificando acceso...</p>
+			</div>
+		);
 	}
 
 	if (!user) {
@@ -17,7 +22,7 @@ const PrivateRoute = ({ children, requiredRole }) => {
 		return <Navigate to="/" replace />;
 	}
 
-	return children;
+	return <Outlet />;
 };
 
 export default PrivateRoute;

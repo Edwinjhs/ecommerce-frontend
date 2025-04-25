@@ -1,0 +1,107 @@
+/* src/styles/DoctorsPage.css */
+.doctors-management {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  margin-top: 6rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.country-filter {
+  padding: 0.6rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.country-sections {
+  margin-top: 2rem;
+}
+
+.country-group {
+  margin-bottom: 3rem;
+}
+
+.country-header {
+  color: #461111;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+.doctors-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.doctor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+  margin: 1rem 0;
+  color: #6c757d;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.edit-button, .details-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  background: #461111;
+  color: white;
+}
+
+.details-button {
+  background: #f8f9fa;
+  color: #461111;
+  border: 1px solid #e0e0e0;
+}
+
+.edit-button:hover {
+  background: #5a2a2a;
+}
+
+.details-button:hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 480px) {
+  .filters {
+    flex-direction: column;
+  }
+  
+  .country-filter {
+    width: 100%;
+  }
+}

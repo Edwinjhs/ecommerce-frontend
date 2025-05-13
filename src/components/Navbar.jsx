@@ -1,5 +1,5 @@
 import "../styles/Navbar.css";
-import logo from "../assets/logo1.png";
+import logo from "../assets/1.png";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher"; // Importa el componente

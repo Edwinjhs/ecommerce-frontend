@@ -8,6 +8,7 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
   color: #333;
   background-color: #f8f9fa;
@@ -41,6 +42,6 @@ main {
 }
 
 .btn:hover {
-  background: #742323;
+  background: #3791df;
   transform: translateY(-1px);
 }

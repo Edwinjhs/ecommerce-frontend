@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import producto1 from "../assets/producto1.png";
-import producto2 from "../assets/producto2.png";
-import producto3 from "../assets/producto3.jpg";
+import producto1 from "../assets/curso1ciencia.png";
+import producto2 from "../assets/curso2java.png";
+import producto3 from "../assets/curs3.png";
 import "../styles/ProductModal.css";
 
 const ProductModal = ({ product, onClose }) => {
@@ -52,7 +52,7 @@ const ProductModal = ({ product, onClose }) => {
 				<h2>{product}</h2>
 				<div className="product-details">
 					<p>Descripción detallada del producto...</p>
-					<button className="btn-buy">Comprar ahora</button>
+					<button className="btn-buy">Unirme ahora</button>
 				</div>
 			</div>
 		</div>

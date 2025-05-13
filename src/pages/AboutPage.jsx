@@ -7,8 +7,8 @@ const AboutPage = () => {
 			<div className="about-container">
 				{/* Sección Hero */}
 				<div className="about-hero">
-					<h1>Nuestra Esencia</h1>
-					<p>Innovación y excelencia en tratamientos estéticos</p>
+					<h1>Sobre AprendeYA</h1>
+					<p>Impulsamos tu futuro con educación de calidad</p>
 				</div>
 
 				{/* Tarjetas de información */}
@@ -21,8 +21,9 @@ const AboutPage = () => {
 						</div>
 						<h2>Misión</h2>
 						<p>
-							Proveer soluciones estéticas innovadoras con los más altos
-							estándares de calidad y seguridad
+							Brindar educación accesible y de calidad a través de cursos y
+							bootcamps virtuales que preparen a las personas para el mundo
+							digital.
 						</p>
 					</div>
 
@@ -34,8 +35,9 @@ const AboutPage = () => {
 						</div>
 						<h2>Visión</h2>
 						<p>
-							Ser líderes mundiales en tecnología regenerativa aplicada a la
-							estética médica
+							Convertirnos en la plataforma líder en Latinoamérica en educación
+							online, empoderando a miles de estudiantes a alcanzar sus metas
+							profesionales.
 						</p>
 					</div>
 
@@ -47,9 +49,9 @@ const AboutPage = () => {
 						</div>
 						<h2>Valores</h2>
 						<ul>
-							<li>Integridad científica</li>
-							<li>Innovación constante</li>
-							<li>Enfoque en resultados</li>
+							<li>Accesibilidad para todos</li>
+							<li>Aprendizaje continuo</li>
+							<li>Innovación educativa</li>
 						</ul>
 					</div>
 				</div>
@@ -61,25 +63,25 @@ const AboutPage = () => {
 						<div className="form-row">
 							<div className="form-group">
 								<label>Nombre completo</label>
-								<input type="text" placeholder="Ej: María González" />
+								<input type="text" placeholder="Ej: Juan Pérez" />
 							</div>
 							<div className="form-group">
 								<label>Correo electrónico</label>
-								<input type="email" placeholder="Ej: contacto@ejemplo.com" />
+								<input type="email" placeholder="Ej: juan@example.com" />
 							</div>
 						</div>
 
 						<div className="form-row">
 							<div className="form-group">
 								<label>Teléfono</label>
-								<input type="tel" placeholder="Ej: +56 9 1234 5678" />
+								<input type="tel" placeholder="Ej: +57 300 123 4567" />
 							</div>
 							<div className="form-group">
-								<label>Asunto</label>
+								<label>Interés</label>
 								<select>
-									<option>Consulta general</option>
-									<option>Soporte técnico</option>
-									<option>Distribuidores</option>
+									<option>Información sobre cursos</option>
+									<option>Asistencia técnica</option>
+									<option>Oportunidades de colaboración</option>
 								</select>
 							</div>
 						</div>
@@ -88,12 +90,12 @@ const AboutPage = () => {
 							<label>Mensaje</label>
 							<textarea
 								rows="4"
-								placeholder="Escribe tu mensaje aquí..."
+								placeholder="Cuéntanos en qué podemos ayudarte..."
 							></textarea>
 						</div>
 
 						<button type="submit" className="submit-btn">
-							Enviar Mensaje
+							Enviar mensaje
 						</button>
 					</form>
 				</div>

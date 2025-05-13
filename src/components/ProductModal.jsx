@@ -31,11 +31,11 @@ const ProductModal = ({ product, onClose }) => {
 
 	const getProductImage = () => {
 		switch (product) {
-			case "Lipocube Nano":
+			case "Ciencia de Datos":
 				return producto1;
-			case "Lipocube Hybrid":
+			case "Java Full Stack":
 				return producto2;
-			case "Exocube":
+			case "Frontend con React":
 				return producto3;
 			default:
 				return producto1;

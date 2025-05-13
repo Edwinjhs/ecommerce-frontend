@@ -18,17 +18,17 @@ const TrackingPage = () => {
 						<h2>{t("whyTrackTitle")}</h2>
 						<div className="benefits-grid">
 							<div className="benefit-item">
-								<div className="benefit-icon">🚚</div>
+								<div className="benefit-icon">📍</div>
 								<h3>{t("realTimeTracking")}</h3>
 								<p>{t("realTimeDesc")}</p>
 							</div>
 							<div className="benefit-item">
-								<div className="benefit-icon">⏱️</div>
+								<div className="benefit-icon">⚡</div>
 								<h3>{t("deliverySpeed")}</h3>
 								<p>{t("deliverySpeedDesc")}</p>
 							</div>
 							<div className="benefit-item">
-								<div className="benefit-icon">🔒</div>
+								<div className="benefit-icon">🔐</div>
 								<h3>{t("secureDelivery")}</h3>
 								<p>{t("secureDeliveryDesc")}</p>
 							</div>
@@ -39,11 +39,11 @@ const TrackingPage = () => {
 						<h2>{t("aboutLipocube")}</h2>
 						<div className="info-section">
 							<div className="info-column">
-								<h3>🌟 {t("ourCommitment")}</h3>
+								<h3>🎓 {t("ourCommitment")}</h3>
 								<p>{t("commitmentText")}</p>
 							</div>
 							<div className="info-column">
-								<h3>💎 {t("productQuality")}</h3>
+								<h3>📜 {t("productQuality")}</h3>
 								<p>{t("qualityText")}</p>
 							</div>
 						</div>
@@ -62,7 +62,7 @@ const TrackingPage = () => {
 
 					<iframe
 						title="Widget de seguimiento"
-						src="https://postal.ninja/widget/tracker?lc=es&autoSize=true&btnText=Buscar&btnColor=%23461111&noSave=true"
+						src="https://postal.ninja/widget/tracker?lc=es&autoSize=true&btnText=Buscar&btnColor=%23005488&noSave=true"
 						className="tracking-widget"
 						frameBorder="0"
 					/>
@@ -73,7 +73,7 @@ const TrackingPage = () => {
 				<h3>{t("needHelp")}</h3>
 				<p>
 					{t("contactSupport")}{" "}
-					<a href="mailto:soporte@lipocube.com">e.sanchez@edtmedical.com</a>
+					<a href="mailto:soporte@aprendeya.com">soporte@aprendeya.com</a>
 				</p>
 			</div>
 		</div>

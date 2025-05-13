@@ -29,7 +29,7 @@ const Pricing = ({ onSelectProduct }) => {
 						</ul>
 						<button
 							className="btn"
-							onClick={() => onSelectProduct("Lipocube Nano")}
+							onClick={() => onSelectProduct("Ciencia de Datos")}
 						>
 							Seleccionar
 						</button>
@@ -49,7 +49,7 @@ const Pricing = ({ onSelectProduct }) => {
 						</ul>
 						<button
 							className="btn"
-							onClick={() => onSelectProduct("Lipocube Hybrid")}
+							onClick={() => onSelectProduct("Java Full Stack")}
 						>
 							Seleccionar
 						</button>
@@ -69,7 +69,7 @@ const Pricing = ({ onSelectProduct }) => {
 						</ul>
 						<button
 							className="btn"
-							onClick={() => onSelectProduct("Exocube")}
+							onClick={() => onSelectProduct("Frontend con React")}
 						>
 							Seleccionar
 						</button>

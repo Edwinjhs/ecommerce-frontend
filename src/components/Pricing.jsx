@@ -1,15 +1,15 @@
 import "../styles/Pricing.css";
-import producto1 from "../assets/producto1.png";
-import producto2 from "../assets/producto2.png";
-import producto3 from "../assets/producto3.jpg";
+import producto1 from "../assets/curso1ciencia.png";
+import producto2 from "../assets/curso2java.png";
+import producto3 from "../assets/curs3.png";
 
 const Pricing = ({ onSelectProduct }) => {
 	return (
 		<section className="pricing" id="pricing">
 			<div className="container">
-				<h2 className="section-title">Nuestros Productos</h2>
+				<h2 className="section-title">Nuestros Cursos</h2>
 				<p className="section-subtitle">
-					Encuentra la solución perfecta para tu clínica
+					Encuentra el mejor curso para seguir creciendo.
 				</p>
 
 				<div className="pricing-grid">
@@ -22,7 +22,7 @@ const Pricing = ({ onSelectProduct }) => {
 								className="product-image"
 							/>
 						</div>
-						<h3>Lipocube Nano</h3>
+						<h3>Ciencia de Datos</h3>
 						<ul className="feature-list">
 							<li>para tal tal tal</li>
 							<li>ideal para tal tal</li>
@@ -42,7 +42,7 @@ const Pricing = ({ onSelectProduct }) => {
 								className="product-image"
 							/>
 						</div>
-						<h3>Lipocube Nano</h3>
+						<h3>Java Full Stack</h3>
 						<ul className="feature-list">
 							<li>para tal tal tal</li>
 							<li>ideal para tal tal</li>
@@ -62,7 +62,7 @@ const Pricing = ({ onSelectProduct }) => {
 								className="product-image"
 							/>
 						</div>
-						<h3>Lipocube Nano</h3>
+						<h3>Frontend con React</h3>
 						<ul className="feature-list">
 							<li>para tal tal tal</li>
 							<li>ideal para tal tal</li>

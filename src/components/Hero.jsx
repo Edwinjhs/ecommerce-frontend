@@ -1,11 +1,11 @@
-import "../styles/Hero.css";
 import { useTranslation } from "react-i18next";
-import heroImage from "../assets/forhero.png";
-import { Link } from "react-router-dom"; // Importa Link
-
+import { Link } from "react-router-dom";
+import heroImage from "../assets/aprendeya.png";
+import "../styles/Hero.css";
 
 const Hero = () => {
 	const { t } = useTranslation();
+
 	return (
 		<section className="hero">
 			<div className="hero-container container">
@@ -21,8 +21,9 @@ const Hero = () => {
 						</Link>
 					</div>
 				</div>
+
 				<div className="hero-image">
-					<img src={heroImage} alt="Producto destacado" />
+					<img src={heroImage} alt="Productos destacados" />
 				</div>
 			</div>
 		</section>

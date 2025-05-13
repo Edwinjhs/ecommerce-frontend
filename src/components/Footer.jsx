@@ -8,7 +8,7 @@ const Footer = () => {
 				<div className="footer-content">
 					<div className="footer-section">
 						<h4>Contacto</h4>
-						<p>e.sanchez@edtmedical.com</p>
+						<p>edwin.ejhnsn@gmail.com</p>
 						<p>+57 3236657380</p>
 					</div>
 					<div className="footer-section">
@@ -20,12 +20,12 @@ const Footer = () => {
 					<div className="footer-section">
 						<h4>Políticas</h4>
 						<a href="#features">Política de privacidad</a>
-						<a href="#pricing">Política de ....</a>
+						<a href="#pricing">Política de datos</a>
 					</div>
 				</div>
 				<div className="footer-bottom">
 					<p>
-						© 2025 Aesthetics and Regenerative Experts - Todos los derechos
+						© 2025 AprendeYa - Educamas - Todos los derechos
 						reservados
 					</p>
 				</div>
